@@ -2,6 +2,8 @@
 title: "Setup"
 ---
 
+Basic setup to get your server running.
+
 ### Installing Jellyfin
 
 ### Adding and Configuring Libraries

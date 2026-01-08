@@ -24,7 +24,7 @@ website:
        - about.qmd
   page-footer:
     left: 
-      - "© 2025 Michael Leiby"
+      - "© 2026 Michael Leiby"
       - icon: github
         href: https://github.com/BandguyMichael
       - "Created with Quarto"
@@ -32,6 +32,6 @@ website:
 format:
   html:
     theme: architect  
-    fontsize: 1.1em
+    fontsize: 1.05em
     css: styles.css
     toc: true

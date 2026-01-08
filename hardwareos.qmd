@@ -2,11 +2,43 @@
 title: "Hardware and Operating Systems"
 ---
 
-### Hardware Selection
+Recommended hardware for your server.
 
-#### Processor
+## Hardware Selection
 
-#### Storage
+### Processor
+
+#### Using Integrated Graphics
+
+Most desktop Intel and Apple-branded processors made since ~2021 will be sufficient for running Jellyfin, however AMD processors are not recommended.  Below is a list of good processor options:
+
+* Intel Core i5 11400, 11500, 11600, 12400, 12500, 12600, 13400, 13500, 13600, 14400, 14500, and 14600
+* Intel Core i7 11700, 12700, 13700, and 14700
+* Intel Core i9 11900, 12900, 13900, and 14900
+* Apple M1, M2, M3, M4, and M5 (Including Pro, Max, and Ultra variants)
+
+Many of the Intel processors have options with letters appended to the end of the model.  Avoid models with "F" or "KF", as those do not have integrated graphics.  This will result in no desktop image without a seperate video card and Jellyfin being unable to transcode content.  Models with "U", "H", or "P" appended to the model are designed for mobile devices.  Such processors will work, however performance will be lesser than the equivalent desktop processor.
+
+While the processor in recent Apple computers will be sufficient to run Jellyfin, a lack of expandability may be prohibitive to using such a machine.  All Apple computers with M-series processors do not have upgradable memory and, apart from the M2 Mac Pro Tower, the internal storage cannot be upgraded either.  External storage drives are compatible with Apple computers, however.
+
+#### Using Dedicated Graphics
+
+If you're planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card will be a good idea.  
+
+Since the integrated graphics on the processor will not be responsible for server use, additional processor options become available.  Below is a list of additional processor options:
+
+* Intel Core i5 8400, 8500, 8600, 9400, 9500, 9600, 10400, 10500, and 10600
+* Intel Core i7 8700, 8086K, 9700, and 10700
+* Intel Core i9 9900, 10850, and 10900
+* AMD Ryzen 5 2500, 2600, 3500, 3600, 4500, 4600, 5500, 5600, 7400, 7500, 7600, 8400, 8500, 8600, 9500, and 9600
+* AMD Ryzen 7 2700, 3700, 3800, 4700, 5700, 5800, 7700, 7800, 8700, 9700, 9800, and 9850
+* AMD Ryzen 9 3950, 5900, 7900, 7950, 9900, and 9950
+
+In addition to the Intel processors listed, models with "F" or "KF" appended to the model will work, since the integrated graphics will not be needed.
+
+Many of the AMD processors have "G", "XT", "F", "X", and/or "X3D" variants.  Any models with any of those identifiers will work.  Similar to Intel, models with "U" or "H" identifiers are primarily used in mobile devices and will have lesser performance compared to the equivalent desktop processor.
+
+### Storage
 
 The amount of storage required in your server will depend on what kinds of media you intend to store, how much media 
 you will be storing, and the quality if your media.  Additionally, less storage is necessary if you compress media 
@@ -30,10 +62,10 @@ Based on the numbers above, here are a few use cases and the amount of storage I
 * If you will be backing up DVDs and/or VHS tapes, 2-4 terabytes should be enough storage; Extensive collections may require 6-8 terabytes.
 * Archiving Blu-Ray discs to your server will require a lot of storage.  A small to medium collection would require about 10-20 terabytes, while an extensive collection may require at least 50 terabytes.
 
-#### Other System Components
+### Other System Components
 
-### Operating Systems
+## Operating Systems
 
-#### Windows
+### Windows
 
-#### Linux
+### Linux

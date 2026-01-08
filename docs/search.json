@@ -4,7 +4,7 @@
     "href": "setup.html",
     "title": "Setup",
     "section": "",
-    "text": "Installing Jellyfin\n\n\nAdding and Configuring Libraries\n\n\nConfiguring and Editing Metadata",
+    "text": "Basic setup to get your server running.\n\nInstalling Jellyfin\n\n\nAdding and Configuring Libraries\n\n\nConfiguring and Editing Metadata",
     "crumbs": [
       "Basics",
       "Setup"
@@ -25,7 +25,7 @@
     "href": "domains.html",
     "title": "Domain Configuration",
     "section": "",
-    "text": "Obtaining a Domain\n\n\nConfiguration\n\nDNS\n\n\n\nLink Domain to Server\n\nLocaltonet\n\n\nPinggy\n\n\nOther Services",
+    "text": "How to use a domain for easier remote access to your server.\n\nObtaining a Domain\n\n\nConfiguration\n\nDNS\n\n\n\nLink Domain to Server\n\nLocaltonet\n\n\nPinggy\n\n\nOther Services",
     "crumbs": [
       "Advanced",
       "Domain Configuration"
@@ -36,7 +36,7 @@
     "href": "configuration.html",
     "title": "Server Configuration",
     "section": "",
-    "text": "Transcoding\n\n\nTrickplay\n\n\nScheduled Tasks\n\n\nPlugins\n\n\nOther Useful Configuration",
+    "text": "Configuring useful features on your server.\n\nTranscoding\n\n\nTrickplay\n\n\nScheduled Tasks\n\n\nPlugins\n\n\nOther Useful Configuration",
     "crumbs": [
       "Advanced",
       "Server Configuration"
@@ -47,7 +47,29 @@
     "href": "access.html",
     "title": "Remote Access",
     "section": "",
-    "text": "Connecting in Your Local Network\n\n\nConnecting Outside Your Network\n\nPort Forwarding\n[What if you can’t access the router?]\n\n\nWhat is Tunneling?\n\n\nOptions\n\nPlayit.gg\n\n\nLocaltonet\n\n\nPinggy\n\n\nOther Options",
+    "text": "How to configure remote access to your server.",
+    "crumbs": [
+      "Basics",
+      "Remote Access"
+    ]
+  },
+  {
+    "objectID": "access.html#connecting-in-your-local-network",
+    "href": "access.html#connecting-in-your-local-network",
+    "title": "Remote Access",
+    "section": "Connecting in Your Local Network",
+    "text": "Connecting in Your Local Network",
+    "crumbs": [
+      "Basics",
+      "Remote Access"
+    ]
+  },
+  {
+    "objectID": "access.html#connecting-outside-your-network",
+    "href": "access.html#connecting-outside-your-network",
+    "title": "Remote Access",
+    "section": "Connecting Outside Your Network",
+    "text": "Connecting Outside Your Network\n\nPort Forwarding\n[What if you can’t access the router?]\n\n\nWhat is Tunneling?\n\n\nOptions\n\nPlayit.gg\n\n\nLocaltonet\n\n\nPinggy\n\n\nOther Options",
     "crumbs": [
       "Basics",
       "Remote Access"
@@ -58,7 +80,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site was created for my CSC-475 project at Furman University. The purpose of this site is to provide a guide on how to set up a media server using Jellyfin, allowing worldwide access to media stored at home. This information is a culmination of over a year and a half of personal experimentation, troubleshooting, and browsing forums.",
+    "text": "This site was created for my CSC-475 capstone project at Furman University. The purpose of this site is to provide a guide on how to set up a media server using Jellyfin and configure worldwide access to media stored at home. All the information provided has been gathered through use and experimentation of my server, troubleshooting of numerous issues, and reading forums and other guides.\nDisclaimer: Neither I nor this website are affiliated with the Jellyfin organization and this is not an official guide.",
     "crumbs": [
       "About"
     ]
@@ -68,7 +90,7 @@
     "href": "accounts.html",
     "title": "Account Management",
     "section": "",
-    "text": "What is jfa-go?\n\n\nHow to add jfa-go to Jellyfin\n\n\njfa-go Configuration",
+    "text": "How to optimize account creation and management.\n\nWhat is jfa-go?\n\n\nHow to add jfa-go to Jellyfin\n\n\njfa-go Configuration",
     "crumbs": [
       "Advanced",
       "Account Management"
@@ -79,7 +101,7 @@
     "href": "demo.html",
     "title": "Demo",
     "section": "",
-    "text": "Here is an interactive demo of what your server can look like!\n\nAttributions for content used:\nBig Buck Bunny © copyright 2008, Blender Foundation / www.bigbuckbunny.org\nCode Rush © copyright 2000, David Winton / https://makertube.net/w/iNHBzq7vYn8Mkw82z6yNcs",
+    "text": "Here is an interactive demo of what your server can look like!\n\nAttributions for content used:\nBig Buck Bunny © copyright 2008, Blender Foundation / www.bigbuckbunny.org\nCode Rush © copyright 2000, David Winton / https://makertube.net/w/iNHBzq7vYn8Mkw82z6yNcs\n“Anachronist”, “Autumn Day”, “Bathed in the Light”, “Brightly Fancy”, “Calmant”, “Carefree”, “Clean Soul”, “Crunk Knight”, “Danse Morialta”, “Dream Culture”, “Enchanted Journey”, “First Call”, “Fluffing a Duck”, “Hamster March”, “Home Base Groove”, “Impact Allegretto”, “Impact Andante”, “Impact Intermezzo”, “Impact Lento”, “Impact Moderato”, “Impact Prelude”, “Impromptu in Quarter Comma Meantone”, “Inner Light”, “Lift Motif”, “Meditation Impromptu 01”, “Meditation Impromptu 02”, “Meditation Impromptu 03”, “Narcissus”, “Nothing Broken”, “On the Passing of Time”, “Petulant March”, “Plain Loafer”, “Radio Martini”, “Reaching Out”, “Resignation”, “Silver Blue Light”, “Sinfonia No. 3 in D Major - BWV 789”, “Sing Along with Jim”, “Smoother Move”, “Sovereign Quarter”, “Tranquility”, “Ujangong Mix”, “Vintage Education”, “Windswept”, “Winner Winner!”, “Winter Reflections”; Kevin MacLeod (incompetech.com); Licensed under Creative Commons: By Attribution 4.0; http://creativecommons.org/licenses/by/4.0/",
     "crumbs": [
       "Demo"
     ]
@@ -89,7 +111,29 @@
     "href": "hardwareos.html",
     "title": "Hardware and Operating Systems",
     "section": "",
-    "text": "Hardware Selection\n\nCPU and GPU\n\n\nStorage\nThe amount of storage required in your server will depend on what kinds of media you intend to store, how much media you will be storing, and the quality if your media. Additionally, less storage is necessary if you compress media from its original state. Below is a list of the storage required for several common types of media:\n\n\n\nMedia Type\nStorage Required\n\n\n\n\nPhoto\n1-10 megabytes\n\n\neBook\n1 megabyte - 1 gigabyte\n\n\nPhone Video\n40-500 megabytes/min\n\n\nCD\n700 megabytes\n\n\nVHS Tape\n1-15 gigabytes/hr\n\n\nDVD\n4.7-8.5 gigabytes\n\n\nBlu-Ray\n25-50 gigabytes\n\n\n4K Blu-Ray\n50-100 gigabytes\n\n\n\nBased on the numbers above, here are a few use cases and the amount of storage I would recommend:\n\nFor backing up photos and videos from your phone or camera, it’s unlikely you’ll need more than 1 terabyte of storage.\nSimilarly, if you back up CDs to your server, you shouldn’t need more than 1 terabyte, unless you have a very extensive collection.\nIf you will be backing up DVDs and/or VHS tapes, 2-4 terabytes should be enough storage; Extensive collections may require 6-8 terabytes.\nArchiving Blu-Ray discs to your server will require a lot of storage. A small to medium collection would require about 10-20 terabytes, while an extensive collection may require at least 50 terabytes.\n\n\n\nOther System Components\n\n\n\nOperating Systems\n\nWindows\n\n\nLinux",
+    "text": "Recommended hardware for your server.",
+    "crumbs": [
+      "Basics",
+      "Hardware and Operating Systems"
+    ]
+  },
+  {
+    "objectID": "hardwareos.html#hardware-selection",
+    "href": "hardwareos.html#hardware-selection",
+    "title": "Hardware and Operating Systems",
+    "section": "Hardware Selection",
+    "text": "Hardware Selection\n\nProcessor\n\nUsing Integrated Graphics\nMost desktop Intel and Apple-branded processors made since ~2021 will be sufficient for running Jellyfin, however AMD processors are not recommended. Below is a list of good processor options:\n\nIntel Core i5 11400, 11500, 11600, 12400, 12500, 12600, 13400, 13500, 13600, 14400, 14500, and 14600\nIntel Core i7 11700, 12700, 13700, and 14700\nIntel Core i9 11900, 12900, 13900, and 14900\nApple M1, M2, M3, M4, and M5 (Including Pro, Max, and Ultra variants)\n\nMany of the Intel processors have options with letters appended to the end of the model. Avoid models with “F” or “KF”, as those do not have integrated graphics. This will result in no desktop image without a seperate video card and Jellyfin being unable to transcode content. Models with “U”, “H”, or “P” appended to the model are designed for mobile devices. Such processors will work, however performance will be lesser than the equivalent desktop processor.\nWhile the processor in recent Apple computers will be sufficient to run Jellyfin, a lack of expandability may be prohibitive to using such a machine. All Apple computers with M-series processors do not have upgradable memory and, apart from the M2 Mac Pro Tower, the internal storage cannot be upgraded either. External storage drives are compatible with Apple computers, however.\n\n\nUsing Dedicated Graphics\nIf you’re planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card will be a good idea.\nSince the integrated graphics on the processor will not be responsible for server use, additional processor options become available. Below is a list of additional processor options:\n\nIntel Core i5 8400, 8500, 8600, 9400, 9500, 9600, 10400, 10500, and 10600\nIntel Core i7 8700, 8086K, 9700, and 10700\nIntel Core i9 9900, 10850, and 10900\nAMD Ryzen 5 2500, 2600, 3500, 3600, 4500, 4600, 5500, 5600, 7400, 7500, 7600, 8400, 8500, 8600, 9500, and 9600\nAMD Ryzen 7 2700, 3700, 3800, 4700, 5700, 5800, 7700, 7800, 8700, 9700, 9800, and 9850\nAMD Ryzen 9 3950, 5900, 7900, 7950, 9900, and 9950\n\nIn addition to the Intel processors listed, models with “F” or “KF” appended to the model will work, since the integrated graphics will not be needed.\nMany of the AMD processors have “G”, “XT”, “F”, “X”, and/or “X3D” variants. Any models with any of those identifiers will work. Similar to Intel, models with “U” or “H” identifiers are primarily used in mobile devices and will have lesser performance compared to the equivalent desktop processor.\n\n\n\nStorage\nThe amount of storage required in your server will depend on what kinds of media you intend to store, how much media you will be storing, and the quality if your media. Additionally, less storage is necessary if you compress media from its original state. Below is a list of the storage required for several common types of media:\n\n\n\nMedia Type\nStorage Required\n\n\n\n\nPhoto\n1-10 megabytes\n\n\neBook\n1 megabyte - 1 gigabyte\n\n\nPhone Video\n40-500 megabytes/min\n\n\nCD\n700 megabytes\n\n\nVHS Tape\n1-15 gigabytes/hr\n\n\nDVD\n4.7-8.5 gigabytes\n\n\nBlu-Ray\n25-50 gigabytes\n\n\n4K Blu-Ray\n50-100 gigabytes\n\n\n\nBased on the numbers above, here are a few use cases and the amount of storage I would recommend:\n\nFor backing up photos and videos from your phone or camera, it’s unlikely you’ll need more than 1 terabyte of storage.\nSimilarly, if you back up CDs to your server, you shouldn’t need more than 1 terabyte, unless you have a very extensive collection.\nIf you will be backing up DVDs and/or VHS tapes, 2-4 terabytes should be enough storage; Extensive collections may require 6-8 terabytes.\nArchiving Blu-Ray discs to your server will require a lot of storage. A small to medium collection would require about 10-20 terabytes, while an extensive collection may require at least 50 terabytes.\n\n\n\nOther System Components",
+    "crumbs": [
+      "Basics",
+      "Hardware and Operating Systems"
+    ]
+  },
+  {
+    "objectID": "hardwareos.html#operating-systems",
+    "href": "hardwareos.html#operating-systems",
+    "title": "Hardware and Operating Systems",
+    "section": "Operating Systems",
+    "text": "Operating Systems\n\nWindows\n\n\nLinux",
     "crumbs": [
       "Basics",
       "Hardware and Operating Systems"
@@ -100,7 +144,7 @@
     "href": "iptv.html",
     "title": "IPTV",
     "section": "",
-    "text": "What is IPTV?\n\n\nSetting Up IPTV\n\n\nChannel Guide\n\n\nDVR Setup",
+    "text": "Adding live television to your server.\n\nWhat is IPTV?\n\n\nSetting Up IPTV\n\n\nChannel Guide\n\n\nDVR Setup",
     "crumbs": [
       "Advanced",
       "IPTV"

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dc2e8d55a11e8bc7e54429e1ec1495bf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c11cdfe929c57623974421c58f46530a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -96,8 +96,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Media Server Guide</a> 
+    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -198,8 +199,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hardware-selection" id="toc-hardware-selection" class="nav-link active" data-scroll-target="#hardware-selection">Hardware Selection</a></li>
-  <li><a href="#operating-systems" id="toc-operating-systems" class="nav-link" data-scroll-target="#operating-systems">Operating Systems</a></li>
+  <li><a href="#hardware-selection" id="toc-hardware-selection" class="nav-link active" data-scroll-target="#hardware-selection">Hardware Selection</a>
+  <ul class="collapse">
+  <li><a href="#processor" id="toc-processor" class="nav-link" data-scroll-target="#processor">Processor</a></li>
+  <li><a href="#storage" id="toc-storage" class="nav-link" data-scroll-target="#storage">Storage</a></li>
+  <li><a href="#other-system-components" id="toc-other-system-components" class="nav-link" data-scroll-target="#other-system-components">Other System Components</a></li>
+  </ul></li>
+  <li><a href="#operating-systems" id="toc-operating-systems" class="nav-link" data-scroll-target="#operating-systems">Operating Systems</a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
+  <li><a href="#linux" id="toc-linux" class="nav-link" data-scroll-target="#linux">Linux</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -225,13 +235,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hardware-selection" class="level3">
-<h3 class="anchored" data-anchor-id="hardware-selection">Hardware Selection</h3>
-<section id="cpu-and-gpu" class="level4">
-<h4 class="anchored" data-anchor-id="cpu-and-gpu">CPU and GPU</h4>
+<p>Recommended hardware for your server.</p>
+<section id="hardware-selection" class="level2">
+<h2 class="anchored" data-anchor-id="hardware-selection">Hardware Selection</h2>
+<section id="processor" class="level3">
+<h3 class="anchored" data-anchor-id="processor">Processor</h3>
+<section id="using-integrated-graphics" class="level4">
+<h4 class="anchored" data-anchor-id="using-integrated-graphics">Using Integrated Graphics</h4>
+<p>Most desktop Intel and Apple-branded processors made since ~2021 will be sufficient for running Jellyfin, however AMD processors are not recommended. Below is a list of good processor options:</p>
+<ul>
+<li>Intel Core i5 11400, 11500, 11600, 12400, 12500, 12600, 13400, 13500, 13600, 14400, 14500, and 14600</li>
+<li>Intel Core i7 11700, 12700, 13700, and 14700</li>
+<li>Intel Core i9 11900, 12900, 13900, and 14900</li>
+<li>Apple M1, M2, M3, M4, and M5 (Including Pro, Max, and Ultra variants)</li>
+</ul>
+<p>Many of the Intel processors have options with letters appended to the end of the model. Avoid models with “F” or “KF”, as those do not have integrated graphics. This will result in no desktop image without a seperate video card and Jellyfin being unable to transcode content. Models with “U”, “H”, or “P” appended to the model are designed for mobile devices. Such processors will work, however performance will be lesser than the equivalent desktop processor.</p>
+<p>While the processor in recent Apple computers will be sufficient to run Jellyfin, a lack of expandability may be prohibitive to using such a machine. All Apple computers with M-series processors do not have upgradable memory and, apart from the M2 Mac Pro Tower, the internal storage cannot be upgraded either. External storage drives are compatible with Apple computers, however.</p>
 </section>
-<section id="storage" class="level4">
-<h4 class="anchored" data-anchor-id="storage">Storage</h4>
+<section id="using-dedicated-graphics" class="level4">
+<h4 class="anchored" data-anchor-id="using-dedicated-graphics">Using Dedicated Graphics</h4>
+<p>If you’re planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card will be a good idea.</p>
+<p>Since the integrated graphics on the processor will not be responsible for server use, additional processor options become available. Below is a list of additional processor options:</p>
+<ul>
+<li>Intel Core i5 8400, 8500, 8600, 9400, 9500, 9600, 10400, 10500, and 10600</li>
+<li>Intel Core i7 8700, 8086K, 9700, and 10700</li>
+<li>Intel Core i9 9900, 10850, and 10900</li>
+<li>AMD Ryzen 5 2500, 2600, 3500, 3600, 4500, 4600, 5500, 5600, 7400, 7500, 7600, 8400, 8500, 8600, 9500, and 9600</li>
+<li>AMD Ryzen 7 2700, 3700, 3800, 4700, 5700, 5800, 7700, 7800, 8700, 9700, 9800, and 9850</li>
+<li>AMD Ryzen 9 3950, 5900, 7900, 7950, 9900, and 9950</li>
+</ul>
+<p>In addition to the Intel processors listed, models with “F” or “KF” appended to the model will work, since the integrated graphics will not be needed.</p>
+<p>Many of the AMD processors have “G”, “XT”, “F”, “X”, and/or “X3D” variants. Any models with any of those identifiers will work. Similar to Intel, models with “U” or “H” identifiers are primarily used in mobile devices and will have lesser performance compared to the equivalent desktop processor.</p>
+</section>
+</section>
+<section id="storage" class="level3">
+<h3 class="anchored" data-anchor-id="storage">Storage</h3>
 <p>The amount of storage required in your server will depend on what kinds of media you intend to store, how much media you will be storing, and the quality if your media. Additionally, less storage is necessary if you compress media from its original state. Below is a list of the storage required for several common types of media:</p>
 <table class="caption-top table">
 <thead>
@@ -283,17 +321,17 @@ ul.task-list li input[type="checkbox"] {
 <li>Archiving Blu-Ray discs to your server will require a lot of storage. A small to medium collection would require about 10-20 terabytes, while an extensive collection may require at least 50 terabytes.</li>
 </ul>
 </section>
-<section id="other-system-components" class="level4">
-<h4 class="anchored" data-anchor-id="other-system-components">Other System Components</h4>
+<section id="other-system-components" class="level3">
+<h3 class="anchored" data-anchor-id="other-system-components">Other System Components</h3>
 </section>
 </section>
-<section id="operating-systems" class="level3">
-<h3 class="anchored" data-anchor-id="operating-systems">Operating Systems</h3>
-<section id="windows" class="level4">
-<h4 class="anchored" data-anchor-id="windows">Windows</h4>
+<section id="operating-systems" class="level2">
+<h2 class="anchored" data-anchor-id="operating-systems">Operating Systems</h2>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows</h3>
 </section>
-<section id="linux" class="level4">
-<h4 class="anchored" data-anchor-id="linux">Linux</h4>
+<section id="linux" class="level3">
+<h3 class="anchored" data-anchor-id="linux">Linux</h3>
 
 
 </section>
@@ -706,7 +744,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- © 2025 Michael Leiby
+ © 2026 Michael Leiby
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/BandguyMichael">
