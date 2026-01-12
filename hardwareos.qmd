@@ -19,11 +19,9 @@ Most desktop Intel and Apple-branded processors made since ~2021 will be suffici
 
 Many of the Intel processors have options with letters appended to the end of the model.  Avoid models with "F" or "KF", as those do not have integrated graphics.  This will result in no desktop image without a seperate video card and Jellyfin being unable to transcode content.  Models with "U", "H", or "P" appended to the model are designed for mobile devices.  Such processors will work, however performance will be lesser than the equivalent desktop processor.
 
-While the processor in recent Apple computers will be sufficient to run Jellyfin, a lack of expandability may be prohibitive to using such a machine.  All Apple computers with M-series processors do not have upgradable memory and, apart from the M2 Mac Pro Tower, the internal storage cannot be upgraded either.  External storage drives are compatible with Apple computers, however.
-
 #### Using Dedicated Graphics
 
-If you're planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card will be a good idea.  
+If you're planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card may be a good idea.  
 
 Since the integrated graphics on the processor will not be responsible for server use, additional processor options become available.  Below is a list of additional processor options:
 
@@ -62,7 +60,11 @@ Based on the numbers above, here are a few use cases and the amount of storage I
 * If you will be backing up DVDs and/or VHS tapes, 2-4 terabytes should be enough storage; Extensive collections may require 6-8 terabytes.
 * Archiving Blu-Ray discs to your server will require a lot of storage.  A small to medium collection would require about 10-20 terabytes, while an extensive collection may require at least 50 terabytes.
 
-### Other System Components
+### Hardware Notes
+
+If choosing a graphics card for transcoding, avoid all AMD cards and any card made before ~2016.  When using the default settings, the encoder in AMD cards do not perform as well as the encoder in Intel and Nvidia cards.  As for age, most cards dating back to the Nvidia 10-series and Intel Arc A-series will support most encoding formats.  For AV1 encoding, all recent Intel cards will work, however Nvidia did not introduce the feature until the RTX 40-series.
+
+For your server, 16-32 gigabytes of memory is recommended.  If you're running Linux, 8 gigabytes may be sufficient, since most Linux versions are lighter weight than Windows.
 
 ## Operating Systems
 
