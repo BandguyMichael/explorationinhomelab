@@ -203,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#processor" id="toc-processor" class="nav-link" data-scroll-target="#processor">Processor</a></li>
   <li><a href="#storage" id="toc-storage" class="nav-link" data-scroll-target="#storage">Storage</a></li>
-  <li><a href="#other-system-components" id="toc-other-system-components" class="nav-link" data-scroll-target="#other-system-components">Other System Components</a></li>
+  <li><a href="#hardware-notes" id="toc-hardware-notes" class="nav-link" data-scroll-target="#hardware-notes">Hardware Notes</a></li>
   </ul></li>
   <li><a href="#operating-systems" id="toc-operating-systems" class="nav-link" data-scroll-target="#operating-systems">Operating Systems</a>
   <ul class="collapse">
@@ -250,11 +250,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Apple M1, M2, M3, M4, and M5 (Including Pro, Max, and Ultra variants)</li>
 </ul>
 <p>Many of the Intel processors have options with letters appended to the end of the model. Avoid models with “F” or “KF”, as those do not have integrated graphics. This will result in no desktop image without a seperate video card and Jellyfin being unable to transcode content. Models with “U”, “H”, or “P” appended to the model are designed for mobile devices. Such processors will work, however performance will be lesser than the equivalent desktop processor.</p>
-<p>While the processor in recent Apple computers will be sufficient to run Jellyfin, a lack of expandability may be prohibitive to using such a machine. All Apple computers with M-series processors do not have upgradable memory and, apart from the M2 Mac Pro Tower, the internal storage cannot be upgraded either. External storage drives are compatible with Apple computers, however.</p>
 </section>
 <section id="using-dedicated-graphics" class="level4">
 <h4 class="anchored" data-anchor-id="using-dedicated-graphics">Using Dedicated Graphics</h4>
-<p>If you’re planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card will be a good idea.</p>
+<p>If you’re planning on doing a lot of transcoding, streaming 4K video, or allowing many people access to your server, a dedigated graphics card may be a good idea.</p>
 <p>Since the integrated graphics on the processor will not be responsible for server use, additional processor options become available. Below is a list of additional processor options:</p>
 <ul>
 <li>Intel Core i5 8400, 8500, 8600, 9400, 9500, 9600, 10400, 10500, and 10600</li>
@@ -321,8 +320,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Archiving Blu-Ray discs to your server will require a lot of storage. A small to medium collection would require about 10-20 terabytes, while an extensive collection may require at least 50 terabytes.</li>
 </ul>
 </section>
-<section id="other-system-components" class="level3">
-<h3 class="anchored" data-anchor-id="other-system-components">Other System Components</h3>
+<section id="hardware-notes" class="level3">
+<h3 class="anchored" data-anchor-id="hardware-notes">Hardware Notes</h3>
+<p>If choosing a graphics card for transcoding, avoid all AMD cards and any card made before ~2016. When using the default settings, the encoder in AMD cards do not perform as well as the encoder in Intel and Nvidia cards. As for age, most cards dating back to the Nvidia 10-series and Intel Arc A-series will support most encoding formats. For AV1 encoding, all recent Intel cards will work, however Nvidia did not introduce the feature until the RTX 40-series.</p>
+<p>For your server, 16-32 gigabytes of memory is recommended. If you’re running Linux, 8 gigabytes may be sufficient, since most Linux versions are lighter weight than Windows.</p>
 </section>
 </section>
 <section id="operating-systems" class="level2">

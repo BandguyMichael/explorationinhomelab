@@ -230,9 +230,19 @@ ul.task-list li input[type="checkbox"] {
 <p>Basic setup to get your server running.</p>
 <section id="installing-jellyfin" class="level3">
 <h3 class="anchored" data-anchor-id="installing-jellyfin">Installing Jellyfin</h3>
+<p>Installing Jellyfin is pretty simple. First, navigate to the website (jellyfin.org) and go to the downloads page. On that page, select “server” and the operating system your computer is running (most likely Windows, Linus, or macOS). From here, follow the steps indicated by your operating system:</p>
+<ul>
+<li>Windows: Select downloads –&gt; AMD64 –&gt; jellyfin_10.11.5_windows-x64.exe</li>
+<li>macOS: Select downloads –&gt; AMD64 –&gt; jellyfin_10.11.5-amd64.dmg</li>
+<li>Linux (Debian/Ubuntu): Paste the command ‘curl -s https://repo.jellyfin.org/install-debuntu.sh | sudo bash’ into the terminal application. If ‘curl’ does not work, try using ‘wget -q -O-’</li>
+</ul>
+<p>From there, follow the instruction given as the application installs. Once everything is installed, open Jellyfin and it should automatically open the server configuration in your browser. If not, type ‘http://localhost:8096/web/index.html#/wizard/start’ into your browser.</p>
 </section>
 <section id="adding-and-configuring-libraries" class="level3">
 <h3 class="anchored" data-anchor-id="adding-and-configuring-libraries">Adding and Configuring Libraries</h3>
+<p>Now that Jellyfin is installed, it’s time to get the server set up. On the first page, enter a name for your server and select a language. Next, create a username and password for your admin account. This account will allow you to login and manage your server from any device.</p>
+<p>The third page is where you will set up your libraries. For each type of media you have, create a library, select a media type, and add the folder containing the media. The navigator in the interface may be difficult to use, so I recommend going to the folder in your operating system’s file manager, copying the path, and pasting it into Jellyfin.</p>
+<p>After seting up your libraries, all that’s left is to select the language and region for metadata, ensure remote connections are allowed, and proceeding to the login page. Once you’ve logged in, the basic server setup is complete!</p>
 </section>
 <section id="configuring-and-editing-metadata" class="level3">
 <h3 class="anchored" data-anchor-id="configuring-and-editing-metadata">Configuring and Editing Metadata</h3>
