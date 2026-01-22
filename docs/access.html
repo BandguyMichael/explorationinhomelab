@@ -199,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#connecting-in-your-local-network" id="toc-connecting-in-your-local-network" class="nav-link active" data-scroll-target="#connecting-in-your-local-network">Connecting in Your Local Network</a></li>
+  <li><a href="#connecting-within-your-local-network" id="toc-connecting-within-your-local-network" class="nav-link active" data-scroll-target="#connecting-within-your-local-network">Connecting Within Your Local Network</a></li>
   <li><a href="#connecting-outside-your-network" id="toc-connecting-outside-your-network" class="nav-link" data-scroll-target="#connecting-outside-your-network">Connecting Outside Your Network</a>
   <ul class="collapse">
   <li><a href="#port-forwarding" id="toc-port-forwarding" class="nav-link" data-scroll-target="#port-forwarding">Port Forwarding</a></li>
@@ -232,8 +232,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>How to configure remote access to your server.</p>
-<section id="connecting-in-your-local-network" class="level2">
-<h2 class="anchored" data-anchor-id="connecting-in-your-local-network">Connecting in Your Local Network</h2>
+<section id="connecting-within-your-local-network" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-within-your-local-network">Connecting Within Your Local Network</h2>
+<p>To connect to your server from your home network, you’ll need to find out the IP address of the server. On Windows, open the command prompt and type <code>ipconfig</code>. If you’re using WiFi, look for the section labeled “Wireless Lan Adapter Wi-Fi”; If you’re using ethernet, look for “Ethernet Adapter Ethernet”. In the respective section, your local IP address will be indicated by “IPv4 Address”.</p>
+<p>On Linux, open the terminal and type <code>hostname -I</code>. This will return the IP addresses of your network interface, one of which is your local IP. If more than one address is shown, look for an address starting with “192.168.<em>.</em>”, “172.16.<em>.</em>”-“172.31.<em>.</em>”, or “10.<em>.</em>.*”</p>
+<p>Once you have the server IP address, enter http://[IP address]:8096 into your browser. If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one. Otherwise, simply log into your server and enjoy!</p>
 </section>
 <section id="connecting-outside-your-network" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-outside-your-network">Connecting Outside Your Network</h2>
@@ -246,20 +249,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="options" class="level3">
 <h3 class="anchored" data-anchor-id="options">Options</h3>
-<section id="playit.gg" class="level4">
-<h4 class="anchored" data-anchor-id="playit.gg">Playit.gg</h4>
-</section>
-<section id="localtonet" class="level4">
-<h4 class="anchored" data-anchor-id="localtonet">Localtonet</h4>
-</section>
-<section id="pinggy" class="level4">
-<h4 class="anchored" data-anchor-id="pinggy">Pinggy</h4>
-</section>
-<section id="other-options" class="level4">
-<h4 class="anchored" data-anchor-id="other-options">Other Options</h4>
+<ul>
+<li><p>Playit.gg:</p></li>
+<li><p>Localtonet:</p></li>
+<li><p>Pinggy:</p></li>
+<li><p>Other Options:</p></li>
+</ul>
 
 
-</section>
 </section>
 </section>
 

@@ -4,9 +4,13 @@ title: "Remote Access"
 
 How to configure remote access to your server.
 
-## Connecting in Your Local Network
+## Connecting Within Your Local Network
 
+To connect to your server from your home network, you'll need to find out the IP address of the server.  On Windows, open the command prompt and type `ipconfig`.  If you're using WiFi, look for the section labeled "Wireless Lan Adapter Wi-Fi"; If you're using ethernet, look for "Ethernet Adapter Ethernet".  In the respective section, your local IP address will be indicated by "IPv4 Address".
 
+On Linux, open the terminal and type `hostname -I`.  This will return the IP addresses of your network interface, one of which is your local IP.  If more than one address is shown, look for an address starting with "192.168.*.*", "172.16.*.*"-"172.31.*.*", or "10.*.*.*"
+
+Once you have the server IP address, enter http://[IP address]:8096 into your browser.  If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one.  Otherwise, simply log into your server and enjoy!
 
 ## Connecting Outside Your Network
 
@@ -24,20 +28,12 @@ How to configure remote access to your server.
 
 ### Options
 
-#### Playit.gg
+* Playit.gg: 
 
+* Localtonet: 
 
+* Pinggy: 
 
-#### Localtonet
-
-
-
-#### Pinggy
-
-
-
-#### Other Options
-
-
+* Other Options:
 
 [https://github.com/anderspitman/awesome-tunneling]: #

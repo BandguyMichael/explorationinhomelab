@@ -54,11 +54,11 @@
     ]
   },
   {
-    "objectID": "access.html#connecting-in-your-local-network",
-    "href": "access.html#connecting-in-your-local-network",
+    "objectID": "access.html#connecting-within-your-local-network",
+    "href": "access.html#connecting-within-your-local-network",
     "title": "Remote Access",
-    "section": "Connecting in Your Local Network",
-    "text": "Connecting in Your Local Network",
+    "section": "Connecting Within Your Local Network",
+    "text": "Connecting Within Your Local Network\nTo connect to your server from your home network, you’ll need to find out the IP address of the server. On Windows, open the command prompt and type ipconfig. If you’re using WiFi, look for the section labeled “Wireless Lan Adapter Wi-Fi”; If you’re using ethernet, look for “Ethernet Adapter Ethernet”. In the respective section, your local IP address will be indicated by “IPv4 Address”.\nOn Linux, open the terminal and type hostname -I. This will return the IP addresses of your network interface, one of which is your local IP. If more than one address is shown, look for an address starting with “192.168..”, “172.16..”-“172.31..”, or “10...*”\nOnce you have the server IP address, enter http://[IP address]:8096 into your browser. If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one. Otherwise, simply log into your server and enjoy!",
     "crumbs": [
       "Basics",
       "Remote Access"
@@ -69,7 +69,7 @@
     "href": "access.html#connecting-outside-your-network",
     "title": "Remote Access",
     "section": "Connecting Outside Your Network",
-    "text": "Connecting Outside Your Network\n\nPort Forwarding\n[What if you can’t access the router?]\n\n\nWhat is Tunneling?\n\n\nOptions\n\nPlayit.gg\n\n\nLocaltonet\n\n\nPinggy\n\n\nOther Options",
+    "text": "Connecting Outside Your Network\n\nPort Forwarding\n[What if you can’t access the router?]\n\n\nWhat is Tunneling?\n\n\nOptions\n\nPlayit.gg:\nLocaltonet:\nPinggy:\nOther Options:",
     "crumbs": [
       "Basics",
       "Remote Access"
