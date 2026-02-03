@@ -233,8 +233,18 @@ ul.task-list li input[type="checkbox"] {
 <section id="transcoding" class="level3">
 <h3 class="anchored" data-anchor-id="transcoding">Transcoding</h3>
 <p>When streaming content, sometimes transcoding will be required to reduce buffering and increase compatiblity. For example, if the upload speed of your internet low, the media must be transcoded to prevent buffering. Additionally, some devices don’t support certain codecs (eg. H.265, AV1, etc) and require media to be transcoded for compatiblity.</p>
-<p>Within Jellyfin, there are many settings for transcoding, but here, we will focus on hardware acceleration, format options, and how far ahead of a given timestamp the server will transcode.</p>
-<p>[discuss the settings]</p>
+<p>Within Jellyfin, there are many settings for transcoding, but here, I will focus on hardware acceleration, format options, and how far ahead of a given timestamp the server will transcode.</p>
+<section id="hardware-acceleration" class="level4">
+<h4 class="anchored" data-anchor-id="hardware-acceleration">Hardware Acceleration</h4>
+</section>
+<section id="format-options" class="level4">
+<h4 class="anchored" data-anchor-id="format-options">Format Options</h4>
+</section>
+<section id="buffer" class="level4">
+<h4 class="anchored" data-anchor-id="buffer">Buffer</h4>
+<p>When transcoding, the server will buffer a certain amount of content ahead of the current playback position. This allows for smoother playback, especially on slower connections. The default setting is 180 seconds, which is generally sufficient for most users. However, if you experience buffering, you may want to increase this value. Conversely, if you have a fast connection and want to reduce the amount of data being buffered, you can decrease this value.</p>
+<p>The server will also hold onto a period of media after it’s been played on the client, allowing for quick rewinding without needing to re-transcode. If you have a fast connection or will infrequently rewind content, you can decrease this value.</p>
+</section>
 </section>
 <section id="trickplay" class="level3">
 <h3 class="anchored" data-anchor-id="trickplay">Trickplay</h3>

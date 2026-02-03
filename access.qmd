@@ -8,9 +8,9 @@ How to configure remote access to your server.
 
 To connect to your server from your home network, you'll need to find out the IP address of the server.  On Windows, open the command prompt and type `ipconfig`.  If you're using WiFi, look for the section labeled "Wireless Lan Adapter Wi-Fi"; If you're using ethernet, look for "Ethernet Adapter Ethernet".  In the respective section, your local IP address will be indicated by "IPv4 Address".
 
-On Linux, open the terminal and type `hostname -I`.  This will return the IP addresses of your network interface, one of which is your local IP.  If more than one address is shown, look for an address starting with "192.168.*.*", "172.16.*.*"-"172.31.*.*", or "10.*.*.*"
+On Linux, open the terminal and type `hostname -I`.  This will return the IP addresses of your network interface, one of which is your local IP.  If more than one address is shown, look for an address starting with "192.168.X.X", "172.16.X.X"-"172.31.X.X", or "10.X.X.X"
 
-Once you have the server IP address, enter http://[IP address]:8096 into your browser.  If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one.  Otherwise, simply log into your server and enjoy!
+Once you have the server IP address, enter `http://[IP address]:8096` into your browser.  If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one.  Otherwise, simply log into your server and enjoy!
 
 ## Connecting Outside Your Network
 
@@ -26,12 +26,10 @@ Most users will want access to their media library outside of their home network
 
 #### Options
 
-* Playit.gg: 
+* Playit.gg: Playit.gg provides limited capabilities in exchange for free use.  This service will work when starting out, although other options are better if more configurability or easier sharing are desired.
 
-* Localtonet: 
+* Localtonet: Localtonet is a paid tunneling service with a free tier.  Like Playit.gg, the free tier is quite limited, but sufficient for trying out the service.  Paid plans allow you to use custom domains and keep the tunnel open 24/7.
 
-* Pinggy: 
+* Pinggy: Like Localtonet, Pinggy is a paid tunneling service with a free tier.  The free tier is still quite limited, but is still sufficient for testing out the service.  Pinggy also allows custom domains and 24/7 tunnels on paid plans.
 
-* Other Options:
-
-[https://github.com/anderspitman/awesome-tunneling]: #
+* Other Options: There are many other tunneling services available.  A good list of options can be found [here](https://github.com/anderspitman/awesome-tunneling).

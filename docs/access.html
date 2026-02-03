@@ -234,8 +234,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="connecting-within-your-local-network" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-within-your-local-network">Connecting Within Your Local Network</h2>
 <p>To connect to your server from your home network, you’ll need to find out the IP address of the server. On Windows, open the command prompt and type <code>ipconfig</code>. If you’re using WiFi, look for the section labeled “Wireless Lan Adapter Wi-Fi”; If you’re using ethernet, look for “Ethernet Adapter Ethernet”. In the respective section, your local IP address will be indicated by “IPv4 Address”.</p>
-<p>On Linux, open the terminal and type <code>hostname -I</code>. This will return the IP addresses of your network interface, one of which is your local IP. If more than one address is shown, look for an address starting with “192.168.<em>.</em>”, “172.16.<em>.</em>”-“172.31.<em>.</em>”, or “10.<em>.</em>.*”</p>
-<p>Once you have the server IP address, enter http://[IP address]:8096 into your browser. If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one. Otherwise, simply log into your server and enjoy!</p>
+<p>On Linux, open the terminal and type <code>hostname -I</code>. This will return the IP addresses of your network interface, one of which is your local IP. If more than one address is shown, look for an address starting with “192.168.X.X”, “172.16.X.X”-“172.31.X.X”, or “10.X.X.X”</p>
+<p>Once you have the server IP address, enter <code>http://[IP address]:8096</code> into your browser. If the server does not load, ensure that your device is on the same network as the server; For example, if you have a main and a guest network, the device and server must be on the same one. Otherwise, simply log into your server and enjoy!</p>
 </section>
 <section id="connecting-outside-your-network" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-outside-your-network">Connecting Outside Your Network</h2>
@@ -248,10 +248,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="options" class="level4">
 <h4 class="anchored" data-anchor-id="options">Options</h4>
 <ul>
-<li><p>Playit.gg:</p></li>
-<li><p>Localtonet:</p></li>
-<li><p>Pinggy:</p></li>
-<li><p>Other Options:</p></li>
+<li><p>Playit.gg: Playit.gg provides limited capabilities in exchange for free use. This service will work when starting out, although other options are better if more configurability or easier sharing are desired.</p></li>
+<li><p>Localtonet: Localtonet is a paid tunneling service with a free tier. Like Playit.gg, the free tier is quite limited, but sufficient for trying out the service. Paid plans allow you to use custom domains and keep the tunnel open 24/7.</p></li>
+<li><p>Pinggy: Like Localtonet, Pinggy is a paid tunneling service with a free tier. The free tier is still quite limited, but is still sufficient for testing out the service. Pinggy also allows custom domains and 24/7 tunnels on paid plans.</p></li>
+<li><p>Other Options: There are many other tunneling services available. A good list of options can be found <a href="https://github.com/anderspitman/awesome-tunneling">here</a>.</p></li>
 </ul>
 
 
