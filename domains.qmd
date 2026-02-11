@@ -8,21 +8,18 @@ How to use a domain for easier remote access to your server.
 
 #### Configuration
 
+If you want to have a custom address for your server, you can purchase a domain from a domain registrar. This will allow you to access your server using a memorable URL instead of an IP address or an auto-generated subdomain from a tunneling service.  
 
+When getting a domain, most websites should give you the functionality you need, such as DNS management, the ability to create subdomains, and depending on services you use for accessing your server, the option to edit nameservers.  Many people report good experiences with Porkbun and Cloudflare; I use Porkbun and find that it works very well.  The one disadvantage of Cloudflare compared to Porkbun is you cannot edit nameservers with Cloudflare.
 
 #### DNS
 
+Anything you do with your domain will require you to edit your domain's DNS settings.  This is where you will create records that point your domain to your server.  The most common record types you will use are A records, CNAME records, and NS records.  A records point a domain or subdomain to an IP address, CNAME records point a domain or subdomain to another domain or subdomain, and NS records point a domain or subdomain to a nameserver.  
 
+If you are using a tunneling service, you will likely need to use CNAME records to point your domain to the subdomain provided by the tunneling service.  For port forwarding, you will likely need to use A records to point your domain to your server's IP address.
 
 ### Link Domain to Server
 
-#### Localtonet
+If you're using a tunneling service, you will need to create CNAME records that point your domain or subdomain to the subdomain provided by the tunneling service.  For example, if you have a subdomain of `jellyfin.yourdomain.com` and your tunneling service provides you with `yourserver.tunnelprovider.com`, you would create a CNAME record for `jellyfin` that points to `yourserver.tunnelprovider.com`.  Additionally, you may need to add your domain to your tunneling service's dashboard and verify ownership of the domain, which usually involves adding a TXT record to your domain's DNS settings.
 
-
-
-#### Pinggy
-
-
-
-#### Other Services
-
+If you're using port forwarding, you will need to create A records that point your domain or subdomain to your server's IP address.  For example, if you have a subdomain of `jellyfin.yourdomain.com` and your server's IP address is `123.456.789.012`, you would create an A record for `jellyfin` that points to `123.456.789.012`.  Additionally, if your ISP provides you with a dynamic IP address, you may need to use a dynamic DNS service to keep your domain pointing to your server's current IP address.
